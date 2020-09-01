@@ -1,0 +1,58 @@
+{
+	"always_show_minimap_viewport": true,
+	"auto_close_tags": false,
+	"auto_complete": true,
+	"auto_match_enabled": false,
+	"close_windows_when_empty": true,
+	"color_scheme": "Adam's Theme.tmTheme",
+	"enable_tab_scrolling": false,
+	"enable_typescript_language_service": false,
+	"folder_exclude_patterns":
+	[
+		".sass-cache",
+		".sass_cache",
+		".git",
+		"*.egg-info",
+		"dist",
+		"build",
+		"node_modules",
+		".svn",
+		".virtualenv",
+		"temp-for-static",
+		"hs-static-tmp-*",
+		".dev-virtualenv",
+		"research/",
+		".cache",
+	],
+	"font_face": "Menlo-Regular",
+	"font_size": 16.0,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"pep8_ignore":
+	[
+		"E501",
+		"E302",
+		"E251",
+		"E303",
+		"E231",
+		"E111",
+		"W293",
+		"W291",
+		"W292"
+	],
+	"remember_open_files": true,
+	"show_definitions": false,
+	"show_tab_close_buttons": true,
+	"soda_classic_tabs": true,
+	"sublimelint": true,
+	"sublimelint_fill_outlines": false,
+	"tab_size": 2,
+	"theme": "Soda Dark 3.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"word_separators": "./\\()\"'-:,.;<>~!@#%^&*|+=[]{}`~?",
+	"word_wrap": true
+}
