@@ -1,0 +1,46 @@
+%YAML 1.2
+---
+# parasails.sublime-syntax
+#
+# Syntax highlight template literals as HTML in Vue components (standalone and inline).
+# Automatically enabled for .component.js and .page.js files.
+# (Designed for use with client-side JavaScript for your Vue.js, Sails.js,
+# or Parasails app-- but could be used anywhere-- even on the server via Node.js.)
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#
+# macOS setup instructions:
+# (1) On the terminal, type:
+#         subl ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/parasails.sublime-syntax
+#
+# (2) Paste in the contents of this file and save it.
+#
+# (3) Completely quit and restart Sublime.
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# For further info, see:
+# • https://gist.github.com/mikermcneil/cfaf0c63a50fe56fd85d1d8dd9f27f4b
+#
+# Copyright 2018, 2019-present, Mike McNeil <@mikermcneil>
+# MIT License
+#
+# Attribution: This file is originally based on the approach outlined in:
+# • https://gist.github.com/subhaze/a754c8d17906f2a25ce2
+# • https://forum.sublimetext.com/t/javascript-es6-template-literals-syntax-for-html/18242/2
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+name: JavaScript (HTML Component)
+file_extensions:
+  - js
+  - ng.js
+scope: source.js.ng
+contexts:
+  main:
+    - match: ""
+      push: scope:source.js
+      with_prototype:
+      - match: '`'
+        push:
+          - meta_content_scope: text.html.basic.embedded.js
+          - include: 'scope:text.html.basic'
+          - match: '`'
+            pop: true

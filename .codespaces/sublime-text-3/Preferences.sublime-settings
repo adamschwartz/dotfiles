@@ -1,12 +1,8 @@
 {
-	"always_show_minimap_viewport": true,
-	"auto_close_tags": false,
-	"auto_complete": true,
 	"auto_match_enabled": false,
 	"close_windows_when_empty": true,
-	"color_scheme": "Adam's Theme.tmTheme",
+	"color_scheme": "auto",
 	"enable_tab_scrolling": false,
-	"enable_typescript_language_service": false,
 	"folder_exclude_patterns":
 	[
 		".sass-cache",
@@ -21,15 +17,13 @@
 		"temp-for-static",
 		"hs-static-tmp-*",
 		".dev-virtualenv",
-		"research/",
-		".cache",
+		".wrangler"
 	],
-	"font_face": "Menlo-Regular",
-	"font_size": 16.0,
+	"font_size": 19,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
 	],
 	"pep8_ignore":
 	[
@@ -44,15 +38,18 @@
 		"W292"
 	],
 	"remember_open_files": true,
-	"show_definitions": false,
 	"show_tab_close_buttons": true,
 	"soda_classic_tabs": true,
 	"sublimelint": true,
 	"sublimelint_fill_outlines": false,
 	"tab_size": 2,
-	"theme": "Soda Dark 3.sublime-theme",
+	"theme": "auto",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_separators": "./\\()\"'-:,.;<>~!@#%^&*|+=[]{}`~?",
-	"word_wrap": true
+	"word_wrap": false,
+	"update_check": false,
+	"index_files": true,
+	"dark_color_scheme": "Packages/User/adam-theme.tmTheme",
+	"dark_theme": "Soda Dark.sublime-theme",
 }

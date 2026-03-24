@@ -1,0 +1,57 @@
+// Documentation at https://www.sublimetext.com/docs/themes.html
+{
+    "variables":
+    {
+        "themed_title_bar": false
+    },
+    "rules":
+    [
+        {
+            "class": "title_bar",
+            "settings": ["themed_title_bar"],
+            "fg": "color(white)",
+            "bg": "color(#2e2e2e)",
+            "style": "dark"
+        },
+        {
+            "class": "icon_file_type",
+            "content_margin": [0,0]
+        },
+        {
+            "class": "icon_folder",
+            "content_margin": [0,0]
+        },
+        {
+            "class": "icon_folder_loading",
+            "content_margin": [0,0]
+        },
+        {
+            "class": "sidebar_container",
+            "layer0.tint": [200, 200, 205],
+        },
+        {
+            "class": "sidebar_label",
+            "font.size": 14,
+            "fg": [180, 180, 180]
+        },
+        {
+            "class": "tab_label",
+            "fade": true,
+            "fg": [170, 170, 170],
+            "shadow_color": [170, 170, 170],
+            "shadow_offset": [0, 0]
+        },
+        {
+            "class": "tab_label",
+            "parents": [{"class": "tab_control", "attributes": ["hover"]}],
+            "fg": [200, 200, 200],
+            "shadow_color": [200, 200, 200]
+        },
+        {
+            "class": "tab_label",
+            "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+            "fg": [230, 230, 230],
+            "shadow_color": [230, 230, 230]
+        }
+    ]
+}
