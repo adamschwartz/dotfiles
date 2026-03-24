@@ -383,6 +383,70 @@ green:  #66d492
         </dict>
 
         <!-- 2026 -->
+
+        <!-- JavaScript -->
+        <dict>
+            <key>name</key>
+            <string>JS Operator</string>
+            <key>scope</key>
+            <string>
+                source.js keyword.operator
+            </string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#fff</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>JS String Interpolation</string>
+            <key>scope</key>
+            <string>
+                source.js meta.interpolation.js punctuation.section.interpolation.begin.js,
+                source.js meta.interpolation.js punctuation.section.interpolation.end.js
+            </string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#a68adb</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>JS This</string>
+            <key>scope</key>
+            <string>
+                source.js variable.language.this.js
+            </string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#ed8978</string>
+                <key>fontStyle</key>
+                <string>italic</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>JS Objects</string>
+            <key>scope</key>
+            <string>
+                source.js meta.mapping.js punctuation.section.mapping.begin.js,
+                source.js meta.mapping.js punctuation.section.mapping.end.js,
+                source.js meta.mapping.js meta.mapping.key.js,
+                source.js meta.mapping.js variable.other.readwrite.js
+            </string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#a68adb</string>
+                <key>fontStyle</key>
+                <string></string>
+            </dict>
+        </dict>
+
+        <!-- CSS -->
         <dict>
             <key>name</key>
             <string>CSS Custom Properties</string>
