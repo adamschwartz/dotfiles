@@ -515,6 +515,34 @@ green:  #66d492
         <!-- Markdown -->
         <dict>
             <key>name</key>
+            <string>Code Fence Punctuation/Language</string>
+            <key>scope</key>
+            <string>
+                text.html.markdown punctuation.definition.raw.begin.markdown,
+                text.html.markdown punctuation.definition.raw.end.markdown,
+                text.html.markdown punctuation.definition.raw.code-fence.begin.markdown,
+                text.html.markdown punctuation.definition.raw.code-fence.end.markdown,
+                text.html.markdown constant.other.language-name.markdown
+            </string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#a7a7a3</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>Code Inline Body</string>
+            <key>scope</key>
+            <string>text.html.markdown markup.raw.inline.markdown</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#a68adb</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
             <string>Code Block Body</string>
             <key>scope</key>
             <string>text.html.markdown meta.code-fence.body</string>
