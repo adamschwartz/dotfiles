@@ -69,7 +69,9 @@ hash -d iCloud=~/Library/Mobile\ Documents/com\~apple\~CloudDocs
 alias icloud='cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs'
 
 # My aliases :)
-alias afs='~/dev/adamschwartz.github.io'
+alias ip="ipconfig getifaddr en0"
+alias copy="pbcopy"
+alias afs='~/dev/adamschwartz'
 alias sublime='subl'
 alias e='sublime'
 alias giterdone='gitx -c'
@@ -89,8 +91,8 @@ alias editzsh='sublime ~/.zshrc'
 #alias webpop='cd /Volumes/OptiBay\ Drive/Dropbox/Private/Code/Webpop/adamschwartz'
 alias gitergone='git stash; git stash drop'
 cdls() {
-	cd $1
-	ls
+  cd $1
+  ls
 }
 alias show='cdls $1'
 
@@ -133,3 +135,6 @@ alias python=/usr/bin/python3
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# Open current working tree git repo on GitHub
+alias gh='if $(git rev-parse --is-inside-work-tree); then open "$(git config --get remote.origin.url | sed -- "s|:|/|g;s|git@|https://|g;s|\.git||g")/tree/$(git rev-parse --abbrev-ref HEAD)/";fi'
